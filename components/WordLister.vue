@@ -53,7 +53,7 @@ export default {
     },
     isRepeat(word, index){
       for(var i=0;i<index;i++){
-        if(this.raw_words[i] === word){
+        if(this.app.slugify(this.raw_words[i].toLowerCase()) === this.app.slugify(word.toLowerCase())){
           return true;
         }
       }
@@ -81,7 +81,7 @@ export default {
 
       for(var i=index;i<this.raw_words.length;i++){
         if(i === index) continue;
-        if(this.raw_words[i] === word){
+        if(this.raw_words[i].toLowerCase() === word.toLowerCase()){
           this.word_slots[i] = {
             defined: false,
             repeat: index,
