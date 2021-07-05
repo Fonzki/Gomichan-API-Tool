@@ -50,6 +50,7 @@ tool for Gomichan API data entry (not an end user facing interface)
 5. start entry with '/' in order to spell out syllables for the TTS hit SPACE to confirm and clear
 6. defined words appear in green
 7. repeated words that are not yet defined appear in yellow 
+
 ![defined_repeat](https://github.com/Fonzki/Gomichan-API-Tool/blob/master/screenshots/defined_repeat.png)
 ![predef_repeat](https://github.com/Fonzki/Gomichan-API-Tool/blob/master/screenshots/predef_repeat.png)
 
@@ -74,4 +75,5 @@ tool for Gomichan API data entry (not an end user facing interface)
 
 ### database definition + word recognition
 1. all words in the line are now green with no input syllable box.
+
 ![word_recog_update](https://github.com/Fonzki/Gomichan-API-Tool/blob/master/screenshots/word_recog_update.png)
