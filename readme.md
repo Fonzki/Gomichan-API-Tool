@@ -34,6 +34,22 @@ tool for Gomichan API data entry (not an end user facing interface)
 ### line entry and translation
 1. transcribe the video clip in the "Enter Phrases" box (this is done by hand)
 2. delimit phrases by grammar role with periods(.) (ex. subject/verb/object/other)
-3. enter translation (also done by hand to avoid common EN->JP translation errors)
+3. enter translation (translated by hand to avoid common EN->JP translation errors)
 
 ![rawline_translation](https://github.com/Fonzki/Gomichan-API-Tool/blob/master/screenshots/better_raw.png)
+
+### defining syllables and phonemes
+1. all words not in backend database appear with syllable boxes
+2. enter the number of syllables, the number of boxes will update.
+3. enter the 0-index of the stressed syllable (1 syllable words can't be stressed and are locked to -1)
+4. enter phoneme shorthands to automatically add phoneme to label
+- (Ex. ow = aʊ, schwa[x] = ə, aw = ɒ) since this is not an end user tool I have these names memorized from phoneme.json
+- ambiguous phonemes can be added with SPACE (ex. ee => eer/ee OR ai => air/ai)
+- misentries can be deleted with BACKSPACE when the box is empty (this does cause unintentional deletions but will be addressed later)
+5. start entry with '/' in order to spell out syllables for the TTS hit SPACE to confirm and clear
+6. defined words appear in green
+7. repeated words that are not yet defined appear in yellow 
+![defined_repeat](https://github.com/Fonzki/Gomichan-API-Tool/blob/master/screenshots/defined_repeat.png)
+![predef_repeat](https://github.com/Fonzki/Gomichan-API-Tool/blob/master/screenshots/predef_repeat.png)
+
+
