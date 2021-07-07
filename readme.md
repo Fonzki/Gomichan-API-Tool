@@ -25,7 +25,7 @@ tool for Gomichan API data entry (not an end user facing interface)
 2. click load and the video and label will update
 3. seek to around the sentence to subtitle
 4. hit mark next to start to set time in seconds
-5. hit mark next to duration to set sentence length in seconds
+5. hit mark next to duration at the end of the sentence to set duration in seconds
 6. use (test timing) to fine tune timing while the video loops
 7. info in parentheses will be sent to the backend when request is made.
 
